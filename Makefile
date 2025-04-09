@@ -27,7 +27,7 @@ libmy.a: $(OBJ_LIB)
 	$(AR) rcs libmy.a $(OBJ_LIB)
 
 $(NAME): libmy.a $(OBJ_PROG)
-	$(CC) -o $(NAME) $(OBJ_PROG)
+	$(CC) -o $(NAME) $(OBJ_PROG) $(OBJ_LIB)
 
 clean:
 	rm -f $(OBJ_LIB) $(OBJ_PROG)
