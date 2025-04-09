@@ -16,7 +16,7 @@ SRC_LIB = lib/my/basefunction.c \
 		  lib/my/str_to_int.c
 OBJ_LIB = $(SRC_LIB:.c=.o)
 MY_H = my.h
-NAME = test
+NAME = mixword
 SRC_PROG = src/main.c
 OBJ_PROG = $(SRC_PROG:.c=.o)
 
@@ -54,4 +54,3 @@ push:
 	@(git add .)
 	@(git commit -m "[ADD] coding style DFS")
 	@(git push)
-
