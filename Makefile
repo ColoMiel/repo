@@ -15,7 +15,6 @@ SRC_LIB = lib/my/basefunction.c \
 		  lib/my/my_strlen.c \
 		  lib/my/str_to_int.c
 OBJ_LIB = $(SRC_LIB:.c=.o)
-MY_H = my.h
 NAME = mixword
 SRC_PROG = src/main.c \
 	   src/algo.c

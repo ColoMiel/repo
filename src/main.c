@@ -6,8 +6,6 @@
 */
 
 #include "../lib/my/my.h"
-#include <fcntl.h>
-#include <stdio.h>
 
 int main(int argc, char **argv)
 {
@@ -21,12 +19,12 @@ int main(int argc, char **argv)
     fd = open(argv[2], O_RDONLY);
     if (fd == -1)
         return 84;
-   if (argc == 5){
+    if (argc == 5) {
         if (strcmp("-s", argv[3]) != 0)
             return 84;
         if (is_digit(argv[4]) != 1)
-           return 84;
+            return 84;
     }
     data = &argv[1];
-    printf("allo salem %s\n", data[0]);
+    algo(data);
 }
