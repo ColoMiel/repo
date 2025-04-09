@@ -26,5 +26,6 @@ int main(int argc, char **argv)
             return 84;
     }
     data = &argv[1];
-    algo(data);
+    if (algo(data) == 84)
+        return 84;
 }
