@@ -17,7 +17,8 @@ SRC_LIB = lib/my/basefunction.c \
 OBJ_LIB = $(SRC_LIB:.c=.o)
 MY_H = my.h
 NAME = mixword
-SRC_PROG = src/main.c
+SRC_PROG = src/main.c \
+	   src/algo.c
 OBJ_PROG = $(SRC_PROG:.c=.o)
 
 all: libmy.a $(NAME)
