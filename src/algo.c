@@ -7,7 +7,7 @@
 
 #include "../lib/my/my.h"
 
-int main(int argc, char **argv)
+int algo(char **data)
 {
-    printf("allo salem %s\n", argv[0]);
+    
 }

@@ -40,5 +40,6 @@ char *my_strdup(char *src);
 void parsing(int argc, char **argv, char *content);
 void characters(char *args, char *content);
 int my_put_nbr(int nb);
+int algo(char **data);
 
 #endif /* MY_ */
