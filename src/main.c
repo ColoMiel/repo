@@ -1,0 +1,29 @@
+/*
+** EPITECH PROJECT, 2025
+** utile
+** File description:
+** main
+*/
+
+#include "../lib/my/my.h"
+#include <fcntl.h>
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+    int fd;
+    char **data = malloc(sizeof(char *)* argc);
+
+    if (argc < 3)
+        return 84;
+    if (strcmp("-f", argv[1]) != 0)
+        return 84;
+    fd = open(argv[2], O_RDONLY);
+    if (fd == -1)
+        return 84;
+    if (char_verif(fd) == 0)
+        return 84;
+    if (argc == 5)
+    
+    printf("allo salem %s\n", argv[0]);
+}
